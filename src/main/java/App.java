@@ -115,7 +115,7 @@ public class App {
 
        String name = request.queryParams("name"); // Saving user inputted hero name into a String
         String description = request.queryParams("description");
-        Client newClient = new Client(name, description); // Squad constructorcreating new squad with the user's provided name
+        Stylist newClient = new Stylist(name, description); // Squad constructorcreating new squad with the user's provided name
         request.session().attribute("client", "newClient"); // We then save the squad object into the user's session
 
        stylist.addClient(newClient);
